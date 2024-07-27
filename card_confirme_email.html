@@ -3,156 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
     <title>CARD CONFIRME EMAIL</title>
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-.convitechegou {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-}
+        .convitechegou {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
 
-.formbody {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
-}
+        .formbody {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 450px;
+            width: 100%;
+            padding-bottom: 30px;
+        }
 
-.headerForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
+        .headerForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
 
-.headerForm img {
-    max-width: 100%;
-    height: auto;
-}
+        .headerForm img {
+            max-width: 100%;
+            height: auto;
+        }
 
-.bodyForm {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+        .bodyForm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-.textMainForm p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #222559;
-}
+        .textMainForm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-.textMainForm h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #222559;
-    margin: 10px 0;
-}
+        .textMainForm p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #222559;
+        }
 
-.bemvindo h4 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #222559;
-}
+        .textMainForm h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #222559;
+            margin: 10px 0;
+            text-align: center;
+        }
 
-.bemvindo p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    margin: 10px 0;
-}
+        .bemvindo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+        }
 
-.buttonjoincomunnity {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+        .bemvindo h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222559;
+        }
 
-.buttonjoincomunnity button {
-    padding: 15px 30px;
-    border-radius: 8px;
-    border: none;
-    background-color: #6e23de;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        .bemvindo p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            margin: 10px 0;
+        }
 
-.buttonjoincomunnity button:hover {
-    background-color: #631eca;
-}
+        .buttonjoincomunnity {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
 
-.footerCard {
-    text-align: center;
-    margin-top: 20px;
-}
+        .buttonjoincomunnity a {
+            padding: 15px 30px;
+            border-radius: 8px;
+            border: none;
+            background-color: #6e23de;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            max-width: 280px;
+            text-decoration: none;
+        }
 
-.footerCard p {
-    font-size: 14px;
-    color: #aaa;
-}
+        .buttonjoincomunnity button:hover {
+            background-color: #631eca;
+        }
 
-@media (max-width: 768px) {
-    .textMainForm p, .textMainForm h3, .bemvindo h4, .bemvindo p {
-        text-align: center;
-    }
+        .footerCard {
+            text-align: center;
+            margin-top: 50px;
+        }
 
-    .buttonjoincomunnity {
-        margin-top: 20px;
-    }
-}
+        .footerCard p {
+            font-size: 14px;
+            color: #aaa;
+        }
 
-@media (max-width: 480px) {
-    .textMainForm p, .textMainForm h3 {
-        font-size: 18px;
-    }
+        @media (max-width: 768px) {
+            .formbody {
+                padding: 15px;
+            }
 
-    .bemvindo h4 {
-        font-size: 18px;
-    }
+            .textMainForm p, .textMainForm h3, .bemvindo h4, .bemvindo p {
+                text-align: center;
+                font-size: 16px;
+            }
 
-    .bemvindo p {
-        font-size: 14px;
-    }
+            .bemvindo {
+                padding: 10px;
+            }
 
-    .buttonjoincomunnity button {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
-}
+            .buttonjoincomunnity a {
+                padding: 10px 20px;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
 
+        @media (max-width: 480px) {
+            .formbody {
+                padding: 10px;
+            }
+
+            .textMainForm p, .textMainForm h3 {
+                font-size: 16px;
+            }
+
+            .bemvindo h4 {
+                font-size: 16px;
+            }
+
+            .bemvindo p {
+                font-size: 14px;
+            }
+
+            .buttonjoincomunnity a {
+                font-size: 12px;
+                padding: 10px 15px;
+                text-decoration: none;
+            }
+
+            .footerCard p {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="convitechegou">
         <div class="formbody">
             <div class="headerForm">
-                <img src="./assets/images/logoemail.png" alt="Logo">
+                <!-- <img src="./assets/images/logoemail.png" alt="Logo"> -->
             </div>
             <div class="bodyForm">
                <div class="textMainForm">
@@ -164,7 +207,7 @@ body {
                     <h4>Seja muito bem vindo(a)!</h4>
                     <p>Para começar a interagir na comunidade, precisamos que por gentileza confirme seu e-mail clicando no botão abaixo</p>
                     <div class="buttonjoincomunnity">
-                        <button>Entrar na comunidade</button>
+                        <a href="#">Entrar na comunidade</a>
                     </div>
                  </div>
                </div>
